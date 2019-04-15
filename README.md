@@ -1,5 +1,5 @@
 # Storyboard of Traffic Violations for Montgomery County, MD
-### Jointly developed by Justin Schlankey, Madhu S, Diane Tate and Yahia Zemoura 
+### Jointly developed by Justin Schlankey, Madhuram S, Diane Tate and Yahia Zemoura 
 ### Link : [Traffic Violations Dashboard](https://traffic-violations-dashboard.herokuapp.com/)
 
 
