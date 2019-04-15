@@ -13,7 +13,7 @@ Visualize the trends of traffic violations for Montgomery County, MD based on 4 
 
 At a summary level, we also see that District 4 and District 3 are top runners in the number of violations. Also, they significantly impact the YOY change.
 
-![District Summary and Contribution to YoY change](outputImages/district-wise_summary)
+![District Summary and Contribution to YoY change](outputImages/district-wise_summary.png)
 
 
 ### Development Process:
