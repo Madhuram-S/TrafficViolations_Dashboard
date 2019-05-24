@@ -36,7 +36,7 @@ At a summary level, we also see that District 4 and District 3 are top runners i
 
 The dashboard app can be divided broadly into FLASK app (back-end) and HTML/CSS/JavaScript (Front-End). The functions of each explained below
 
-##### [FLASK application](trafficViolations/app.py)):
+##### [FLASK application](trafficViolations/app.py):
 * The flask application drives the operation of the data-driven website.
 * It exposes multiple routes from which the front-end (HTML/JS) can extract data required for displaying on the page
 * Internally, the flask routes query the SQLite db using Flask-SQLAlchemy and return a JSON output to browser.
