@@ -28,8 +28,8 @@ At a summary level, we also see that District 4 and District 3 are top runners i
 	* Formats are all columns changed to correct formats (eg. date cols to datatime format, Yes/No cols to boolean and numeric to Float)
 * A new column Violation Category was created based on Analysis of Description field to categories like Distraction, Impairment, Offense, Safety, Violation and Other
 
-#### [Data Agregation and SQL Load](importDataToSQLite.ipynb):
-* After cleaning, the data was agregated by Year, Month, Quarter, Police District, Type of Violation, Category of Violation and Vehicle type
+#### [Data Aggregation and SQL Load](importDataToSQLite.ipynb):
+* After cleaning, the data was aggregated by Year, Month, Quarter, Police District, Type of Violation, Category of Violation and Vehicle type
 * Once aggregated, the data was loaded into SQLite db using SQLAlchemy and Pandas.to_sql()
 
 #### [Development of Data-Driven Dashboard using Flask / HTML / JS](trafficViolations/):
@@ -44,7 +44,7 @@ The dashboard app can be divided broadly into FLASK app (back-end) and HTML/CSS/
 ##### Front-End Webpages  
 * [HTML and CSS](trafficViolations/templates/index.html) primarily provide the layout, format, styles and static content of the entire website.
 * [Javascript](trafficViolations/static/js/main.js) is completely responsible for user interactivty and dynamically changing the page content based on user inputs.
-* jQuery and d3.js are key libraris of Javascript that provides the data-driven functionality
+* jQuery and d3.js are key libraries of Javascript that provides the data-driven functionality
 * lealet.js is responsible for the map display on the website
 
 
