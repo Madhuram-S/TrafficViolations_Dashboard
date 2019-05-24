@@ -18,7 +18,7 @@ At a summary level, we also see that District 4 and District 3 are top runners i
 
 ### Development Process:
 
-#### Data extraction and cleaning ([link to ipynb](importDataToSQLite.ipynb): 
+#### [Data extraction and cleaning](importDataToSQLite.ipynb): 
 * The data was extracted as zip file from [Kaggle](https://www.kaggle.com/felix4guti/traffic-violations-in-usa). 
 * Using pandas, the data was read into dataframes which was used for next steps
 * Before we proceed to Data aggregation and Loading to SQLite, the data was cleaned as per the below process
@@ -28,22 +28,22 @@ At a summary level, we also see that District 4 and District 3 are top runners i
 	* Formats are all columns changed to correct formats (eg. date cols to datatime format, Yes/No cols to boolean and numeric to Float)
 * A new column Violation Category was created based on Analysis of Description field to categories like Distraction, Impairment, Offense, Safety, Violation and Other
 
-#### Data Agregation and SQL Load ([link to ipynb](importDataToSQLite.ipynb):
+#### [Data Agregation and SQL Load](importDataToSQLite.ipynb):
 * After cleaning, the data was agregated by Year, Month, Quarter, Police District, Type of Violation, Category of Violation and Vehicle type
 * Once aggregated, the data was loaded into SQLite db using SQLAlchemy and Pandas.to_sql()
 
-#### Development of Data-Driven Dashboard using Flask / HTML / JS ([code link](trafficViolations/):
+#### [Development of Data-Driven Dashboard using Flask / HTML / JS](trafficViolations/):
 
 The dashboard app can be divided broadly into FLASK app (back-end) and HTML/CSS/JavaScript (Front-End). The functions of each explained below
 
-##### FLASK application ([code link](trafficViolations/app.py):
+##### [FLASK application](trafficViolations/app.py)):
 * The flask application drives the operation of the data-driven website.
 * It exposes multiple routes from which the front-end (HTML/JS) can extract data required for displaying on the page
 * Internally, the flask routes query the SQLite db using Flask-SQLAlchemy and return a JSON output to browser.
 
 ##### Front-End Webpages  
-* HTML and CSS primarily provide the layout, format, styles and static content of the entire website. ([code link](trafficViolations/templates/index.html)
-* Javascript (([code link](trafficViolations/static/js/main.js)) is completely responsible for user interactivty and dynamically changing the page content based on user inputs.
+* [HTML and CSS](trafficViolations/templates/index.html) primarily provide the layout, format, styles and static content of the entire website.
+* [Javascript](trafficViolations/static/js/main.js) is completely responsible for user interactivty and dynamically changing the page content based on user inputs.
 * jQuery and d3.js are key libraris of Javascript that provides the data-driven functionality
 * lealet.js is responsible for the map display on the website
 
